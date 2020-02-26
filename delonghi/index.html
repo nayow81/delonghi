@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>AIR MILES - Brand Store - Delonghi</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="https://pattern-library.airmiles.ca/latest/css/style.min.css">
+
+</head>
+
+<body>
+    <style type="text/css">
+        /****** MOBILE FIXES ******/
+        @media only screen and (min-width : 768px) {
+            .mobile_device_375px {
+                display: none;
+            }
+        }
+
+        @media (max-width: 47.9em) {
+            .bootstrap .am-content-drawer:after {
+                left: 300px !important;
+            }
+        }
+
+        @media (max-width: 61.9em) {
+            .bootstrap .am-content-drawer:after {
+                left: 405px !important;
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+            .mobile_device_375px {
+                display: block;
+            }
+
+            .button-padding {
+                margin-bottom: 68% !important;
+            }
+
+            .desktop {
+                display: none;
+            }
+
+            .mobilecenterp {
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 42px !important;
+            }
+
+            h2 {
+                font-size: 26px !important;
+                padding-top: 0.5em !important;
+                padding-bottom: 1em !important;
+            }
+
+            .breadcrumbs {
+                font-size: 16px !important;
+            }
+
+            .col-center {
+                padding: 0px 15px 0px 15px !important;
+            }
+
+            h4 {
+                font-size: 22px !important;
+            }
+
+            button.am-button.am-button--secondary {
+                float: none !important;
+            }
+
+            .right-column #header h1 {
+                padding-top: 0xp !important;
+            }
+
+            .breadcrumbs a {
+                color: #fff !important;
+                font-family: 'omnes', Arial, sans-serif;
+                font-size: 16px !important;
+            }
+
+            .am-content-drawer:after {
+                left: 232px !important;
+            }
+
+            .bootstrap a {
+                text-decoration: none !important;
+            }
+
+            .bootstrap .mobile-header-links {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .bootstrap .nespresso-mobile-logo {
+                height: 250px;
+                padding-bottom: 45px;
+
+            }
+
+            .bootstrap .cat-image-none {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .bootstrap .fixed-width {
+                flex: 0 0 980px;
+                max-width: 980px;
+            }
+        }
+
+        /****** ATG FIXES ****/
+        .airmiles-bootstrap-header-footer .navbar {
+            margin-bottom: 0px !important;
+        }
+
+        .one-column-page-nonredeemable br {
+            display: none;
+        }
+
+        #master_container {
+            overflow: hidden;
+        }
+
+        #rewardsNavContainer {
+            display: none;
+        }
+
+        .right-column #header {
+            padding-top: 0px;
+        }
+
+        #rewards-container {
+            width: 100%;
+            display: block !important;
+        }
+
+        #rewards-content {
+            width: 100%;
+        }
+
+        #page-content-and-menu .right-column {
+            width: 100%;
+        }
+
+        #extra-content {
+            display: none;
+        }
+
+        #rewards-breadcrumb {
+            display: none;
+        }
+
+        #rewards-content.after_breadcrumb {
+            border: none !important
+        }
+
+        .right-column #header h1 {
+            display: none;
+            padding-top: 0px !important;
+        }
+
+        .bootstrap body {
+            font-family: 'omnes', Arial, sans-serif;
+            color: #5e5e5e;
+            font-size: 16px;
+        }
+
+        .bootstrap h1,
+        .bootstrap h2,
+        .bootstrap h3,
+        .bootstrap h4 {
+            font-family: 'omnes', Arial, sans-serif;
+            color: #000;
+            font-style: normal;
+            color: #1790cc;
+        }
+
+        .bootstrap h1 {
+            font-family: 'Lato', Arial, sans-serif;
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 15px;
+        }
+
+        .bootstrap h2 {
+            font-family: Georgia, Times, Times New Roman, serif;
+            font-size: 24px;
+            font-weight: 300;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .bootstrap h3 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 300;
+            text-align: center;
+            color: #000;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .bootstrap h4 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: normal;
+            color: #ffffff;
+            padding-top: 30px;
+            padding-bottom 30px;
+        }
+
+        .bootstrap h5 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            color: #5e5e5e;
+            padding-top: 30px;
+            padding-bottom 30px;
+            margin-bottom: 20px;
+        }
+
+        .bootstrap h6 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            color: #5e5e5e;
+            padding-top: 25px;
+        }
+
+        .bootstrap .breadcrumbs {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #fff !important;
+            padding-bottom: 35px;
+            padding-top: 30px;
+        }
+
+        .bootstrap .breadcrumbs span {
+            font-size: 16px !important;
+        }
+
+        .bootstrap .breadcrumbs .active {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .bootstrap #breadcumbs.breadcrumbs a:hover {
+            text-decoration: underline !important;
+        }
+
+        .bootstrap a {
+            color: #1790cc;
+            text-decoration: none !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .bootstrap .breadcrumbs a {
+            color: #fff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /*CHRIS: applied to LI*/
+        .bootstrap p,
+        .bootstrap .faqbg li {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 14px !important;
+            font-weight: 300;
+            line-height: normal;
+            color: #5e5e5e;
+        }
+
+        .bootstrap .centerp {
+            margin: auto;
+            text-align: center;
+            width: 68%;
+            color: #5e5e5e;
+        }
+
+        .bootstrap .am-functional-button__text {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            color: #1790cc;
+            font-weight: 500;
+        }
+
+        .bootstrap #hero-image {
+            max-height: 807px;
+            background: url("img/header-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+        }
+
+        .bootstrap .am-button--primary-white {
+            color: #1790cc !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--primary-white {
+            width: 250px;
+            margin-top: 25px;
+        }
+
+        .bootstrap .am-button--primary {
+            color: #ffffff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--primary {
+            margin-top: 25px;
+        }
+
+        .bootstrap .am-button--secondary {
+            color: #ffffff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--secondary {
+            width: 250px;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .bootstrap .row-center {
+            text-align: center;
+        }
+
+        .bootstrap .col-center {
+            display: inline-block;
+            float: none;
+        }
+
+        .bootstrap .card-header {
+            padding: 0px;
+            margin-bottom: 0;
+            background-color: #dff3fb !important;
+            border-bottom: 0px !important;
+        }
+
+        .bootstrap .card {
+            background-color: #dff3fb;
+            border: 0px solid !important;
+        }
+
+        .bootstrap .btn {
+            padding: 0px !important;
+        }
+
+        .bootstrap .card-body {
+            padding-left: 50px;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            font-weight: 300;
+            color: #231f20;
+            line-height: 20px;
+        }
+
+        .bootstrap #accordion {
+            overflow: hidden;
+        }
+
+        .bootstrap .panel {
+            overflow: hidden;
+        }
+
+        .bootstrap .text-center {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .bootstrap .no-padding {
+            padding: 0px !important;
+        }
+
+        .bootstrap ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        .bootstrap .card-body a {
+            font-size: 18px;
+        }
+
+        .bootstrap .airmiles-bootstrap-header-footer li {
+            list-style: none !important;
+        }
+
+        .bootstrap .button-padding {
+            padding: 25px 10px 15px 10px;
+            background-color: #fff;
+            margin-bottom: 38%;
+        }
+
+        .bootstrap #delonghi-logo-section {
+            padding-top: 25px;
+        }
+
+        .bootstrap #delonghi-logo-section a {
+            color: #fff !important;
+            text-decoration: underline !important;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .bootstrap .button-spacing {
+            margin-top: 80px;
+        }
+
+        .bootstrap hr {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: solid;
+            border-width: 1px !important;
+            border-color: #e6be68 !important;
+        }
+
+        .bootstrap .vertical-align-auto {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bootstrap #hero-image br {
+            display: block;
+        }
+
+        .bootstrap .golden-btn {
+            background-color: rgb(230, 190, 104);
+            box-shadow: 0px 0px 13.6px 2.4px rgba(0, 0, 0, 0.35);
+            width: 284px;
+            height: 70px;
+            z-index: 48;
+            border: 0px !important;
+            border-radius: 35px !important;
+        }
+
+        .bootstrap .livewell-logo {
+            padding-top: 25px;
+            padding-bottom: 38px;
+        }
+
+        .bootstrap .alignleft {
+            float: left;
+        }
+
+        .bootstrap .alignright {
+            float: right;
+        }
+
+        .bootstrap #video-section {
+            margin-top: 280px;
+            margin-bottom: 105px;
+        }
+
+        .bootstrap #why-choose-section {
+            background: url("img/why-choose-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            overflow: hidden;
+        }
+
+        .bootstrap .why-choose {
+            padding-top: 65px;
+            padding-bottom: 125px;
+        }
+
+        .bootstrap #why-choose-section h3 {
+            color: #fff;
+        }
+
+        .bootstrap #why-choose-section .why-choose-box h3 {
+            color: #000;
+        }
+
+        .bootstrap #why-choose-section .why-choose-button {
+            padding-top: 25px;
+        }
+
+        .bootstrap #why-choose-section .why-choose-button span {
+            color: #fff;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 28px;
+            font-size: 16px;
+        }
+
+        .bootstrap #why-choose-section button.secondary:hover span,
+        .bootstrap button.secondary:focus span,
+        .button.secondary:hover span,
+        .bootstrap .button.secondary:focus span {
+            background-color: rgb(230, 190, 104);
+            box-shadow: 0px 0px 13.6px 2.4px rgba(0, 0, 0, 0.35);
+            z-index: 78;
+            border-radius: 25px !important;
+            padding: 10px 18px 10px 18px;
+
+        }
+
+        .bootstrap #why-choose-section #barista-quality {
+            outline: none;
+        }
+
+        .bootstrap #why-choose-section #machine-range {
+            outline: none;
+        }
+
+        .bootstrap #why-choose-section #italian-heritage {
+            outline: none;
+        }
+
+        .bootstrap #why-choose-section #innovation {
+            outline: none;
+        }
+
+        .bootstrap #why-choose-section button.secondary span,
+        .bootstrap button.secondary span,
+        .bootstrap .button.secondary span,
+        .bootstrap .button.secondary span {
+            padding: 10px 18px 10px 18px;
+        }
+
+        .bootstrap #why-choose-section .why-choose-button .img-button {
+            padding-bottom: 32px;
+            padding-top: 15px;
+        }
+
+        .bootstrap #why-choose-section .owl-carousel .item {
+            padding: 1rem;
+            background-color: #fff;
+        }
+
+        .bootstrap #why-choose-section .owl-carousel .item span {
+            font-size: 24px;
+            color: #112743;
+        }
+
+        #why-choose-section .owl-theme .owl-carousel {
+            width: 100%;
+            height: auto;
+        }
+
+        #why-choose-section .owl-theme {
+            width: 100%;
+            height: auto;
+        }
+
+        #why-choose-section .owl-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+
+        #why-choose-section .owl-carousel .caption {
+            text-align: center;
+        }
+
+        #why-choose-section .owl-carousel .owl-item img {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        #why-choose-section .owl-carousel .owl-stage {
+            display: flex;
+        }
+
+        #why-choose-section .owl-theme .owl-dots .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
+            background: #e6be68;
+
+        }
+
+        #why-choose-section .owl-theme .owl-dots .owl-dot span {
+            background: #fff;
+            border: 2px solid #e6be68;
+            height: 15px;
+            width: 15px;
+            border-radius: 50% !important;
+
+        }
+
+        #why-choose-section .owl-theme .owl-nav [class*=owl-] {
+            background: none;
+        }
+
+        #why-choose-section .owl-theme .owl-nav [class*=owl-]:hover {
+            background: none;
+            opacity: 0.5;
+        }
+
+        #why-choose-section .owl-next,
+        .owl-prev {
+            height: 100%;
+            position: absolute;
+            top: 65px;
+        }
+
+        #why-choose-section .owl-next {
+            right: 0;
+        }
+
+        #why-choose-section .owl-prev {
+            left: 0;
+        }
+
+        #why-choose-section .owl-theme .owl-nav .disabled {
+            opacity: 100;
+        }
+
+        #why-choose-section .owl-theme .owl-nav.disabled+.owl-dots {
+            padding-top: 35px;
+        }
+
+        .bootstrap #fully-auto-machine-section {
+            background: url("img/fully-automatic-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 78px;
+            padding-bottom: 78px;
+        }
+
+        .bootstrap #manually-pump-expresso-section {
+            background: url("img/manual-pump-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 78px;
+            padding-bottom: 78px;
+        }
+
+        .bootstrap #delonghi-kitchen-section {
+            background: url("img/delonghi-kitchen-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 78px;
+            padding-bottom: 78px;
+        }
+
+        .bootstrap #nepresso-product-section {
+            background: url("img/nepresso-silk-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 78px;
+            padding-bottom: 78px;
+        }
+
+        .bootstrap #nepresso-recycle-bag-section {
+            background: url("img/nepresso-black-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 78px;
+            padding-bottom: 78px;
+            overflow: hidden;
+        }
+
+        .bootstrap #nepresso-recycle-bag-section .nepresso-recycle-title {
+            padding-bottom: 55px;
+        }
+
+        .bootstrap #nepresso-recycle-bag-section a {
+            padding-top: 35px;
+        }
+
+        .bootstrap #nepresso-recycle-bag-section .recyclebags {
+            padding: 25px;
+        }
+
+        .bootstrap #nepresso-how-to-order-section {
+            background: url("img/howtoorder-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 108px;
+            padding-bottom: 108px;
+            overflow: hidden;
+        }
+
+        .bootstrap #nepresso-how-to-order-section a img:hover {
+            opacity: 0.6;
+        }
+
+        .bootstrap #nepresso-how-to-order-section-mobile a img:hover {
+            opacity: 0.6;
+        }
+
+        .bootstrap #nepresso-recycle-bag-section a img:hover {
+            opacity: 0.6;
+        }
+
+        .bootstrap #nepresso-recycle-bag-section-mobile a img:hover {
+            opacity: 0.6;
+        }
+
+        .bootstrap #nepresso-how-to-order-section-mobile {
+            background: url("img/nepresso-silk-bg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+            padding-top: 108px;
+            padding-bottom: 108px;
+            overflow: hidden;
+        }
+
+        .bootstrap #nepresso-how-to-order-section .howtoorder-icons {
+            padding: 25px;
+        }
+
+        .bootstrap #nepresso-how-to-order-section-mobile .howtoorder-icons {
+            padding: 25px;
+        }
+
+        .bootstrap .box-panel {
+            background-color: #fff;
+            padding: 48px;
+            box-shadow: 0px 0px 13.6px 2.4px rgba(0, 0, 0, 0.35);
+        }
+
+        .bootstrap .align-flex-bottom {
+            align-self: flex-end;
+        }
+
+        .bootstrap .align-flex-top {
+            align-self: flex-start;
+        }
+
+        .bootstrap .align-display-flex {
+            display: flex;
+        }
+
+        .bootstrap .icon__close {
+            width: 22px;
+            height: 22px;
+            background: url(img/icon-close.svg);
+            background-repeat: no-repeat;
+        }
+
+        .bootstrap .icon {
+            display: block;
+            text-indent: -9999px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            background-repeat: no-repeat;
+        }
+
+        .bootstrap #hero-image .golden-btn:hover {
+            opacity: 0.9;
+        }
+
+        .bootstrap a.link,
+        .bootstrap button {
+            cursor: pointer;
+        }
+
+        .bootstrap p {
+            margin-bottom: 15px;
+        }
+
+        .bootstrap #nepresso-product-section a {
+            display: block;
+        }
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*! Carousel Only */
+
+        .bootstrap .carousel {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-bottom: 10px;
+            padding-top: 40px;
+        }
+
+        .bootstrap .carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .bootstrap .carousel-item {
+            position: relative;
+            display: none;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            transition: -webkit-transform 0.6s ease;
+            transition: transform 0.6s ease;
+            transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+
+        }
+
+        .bootstrap .carousel-item {
+            height: 560px;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .bootstrap .carousel-item.active,
+        .bootstrap .carousel-item-next,
+        .bootstrap .carousel-item-prev {
+            display: block;
+        }
+
+        .bootstrap .carousel-item-next,
+        .bootstrap .carousel-item-prev {
+            position: absolute;
+            top: 0;
+        }
+
+        .bootstrap .carousel-item-next.carousel-item-left,
+        .bootstrap .carousel-item-prev.carousel-item-right {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+
+            .bootstrap .carousel-item-next.carousel-item-left,
+            .bootstrap .carousel-item-prev.carousel-item-right {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .bootstrap .carousel-item-next,
+        .bootstrap .active.carousel-item-right {
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+
+            .bootstrap .carousel-item-next,
+            .bootstrap .active.carousel-item-right {
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0);
+            }
+        }
+
+        .bootstrap .carousel-item-prev,
+        .bootstrap .active.carousel-item-left {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+
+        @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+
+            .bootstrap .carousel-item-prev,
+            .bootstrap .active.carousel-item-left {
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+
+        .bootstrap .carousel-control-prev,
+        .bootstrap .carousel-control-next {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 15%;
+            color: #fff;
+            text-align: center;
+            opacity: .5;
+        }
+
+        .bootstrap .carousel-control-prev:hover,
+        .bootstrap .carousel-control-prev:focus,
+        .bootstrap .carousel-control-next:hover,
+        .bootstrap .carousel-control-next:focus {
+            color: #fff;
+            text-decoration: none;
+            outline: 0;
+            opacity: .9;
+        }
+
+        .bootstrap .carousel-control-prev {
+            left: 0;
+        }
+
+        .bootstrap .carousel-control-next {
+            right: 0;
+        }
+
+        .bootstrap .carousel-control-prev-icon,
+        .bootstrap .carousel-control-next-icon {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: transparent no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        .bootstrap .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+
+        .bootstrap .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+
+        .bootstrap .carousel-indicators {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            left: 0;
+            z-index: 5;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-left: 0;
+            margin-right: 15%;
+            margin-left: 15%;
+            list-style: none;
+
+        }
+
+        .bootstrap .carousel-indicators li {
+            position: relative;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            margin-left: 5px;
+            text-indent: -999px;
+            border: 1px solid #1474a4;
+            background: #fff;
+            border: 2px solid #112743;
+            height: 18px;
+            width: 18px;
+            border-radius: 50% !important;
+        }
+
+        .bootstrap .carousel-indicators li::before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 10px;
+            content: "";
+        }
+
+        .bootstrap .carousel-indicators li::after {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 10px;
+            content: "";
+        }
+
+        .bootstrap .carousel-indicators .active {
+            background-color: #112743;
+        }
+
+        .bootstrap .carousel-whychoose-indicators li {
+            border: 2px solid #e6be68 !important;
+        }
+
+        .bootstrap .carousel-whychoose-indicators .active {
+            background-color: #e6be68 !important;
+        }
+
+        .bootstrap .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 20px;
+            left: 15%;
+            z-index: 5;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .bootstrap .carousel-caption {
+            transform: translateY(-50%);
+            bottom: 0;
+        }
+
+
+        /* Used with carousel */
+
+        .bootstrap .d-block {
+            display: block !important;
+        }
+
+        .bootstrap .d-none {
+            display: none !important;
+        }
+
+        .bootstrap .w-100 {
+            width: 100% !important;
+        }
+
+        .bootstrap .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bootstrap .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .bootstrap .sr-only-focusable:active,
+        .bootstrap .sr-only-focusable:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            clip: auto;
+        }
+
+        @media (min-width: 768px) {
+            .bootstrap .d-md-block {
+                display: block !important;
+            }
+
+            .bootstrap .carousel-caption h3 {
+                font-size: 48px;
+            }
+
+            .carousel-content p {
+                font-size: 18px !important;
+            }
+        }
+
+        .carousel-content {
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            z-index: 20;
+            text-align: left;
+        }
+
+        .carousel-content p {
+            color: #fff;
+        }
+
+        .carousel-caption span {
+            font-size: 24px;
+            color: #112743;
+        }
+
+        /*! Modal Only */
+        .bootstrap .close:hover,
+        .bootstrap .close:focus {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        .bootstrap button.close {
+            padding: 0;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            -webkit-appearance: none;
+        }
+
+        .bootstrap .modal-open {
+            overflow: hidden;
+        }
+
+        .bootstrap .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1050;
+            display: none;
+            overflow: hidden;
+            outline: 0;
+        }
+
+        .bootstrap .modal.fade .modal-dialog {
+            transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out;
+            /* transition: transform .3s ease-out,-webkit-transform .3s ease-out; */
+            -webkit-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+        }
+
+        .bootstrap .modal.in .modal-dialog {
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        .bootstrap .modal-open .modal {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .bootstrap .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: .5rem;
+            pointer-events: none;
+        }
+
+        .bootstrap .modal-content {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            pointer-events: auto;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: .3rem;
+            outline: 0;
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1040;
+            background-color: #000;
+        }
+
+        .modal-backdrop.fade {
+            opacity: 0.5;
+            filter: alpha(opacity=0);
+        }
+
+        .modal-backdrop.in {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        .bootstrap .modal-header {
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            min-height: 16.42857143px;
+        }
+
+        .bootstrap .modal-header .close {
+            margin-top: -2px;
+            float: right;
+        }
+
+        .bootstrap .modal-title {
+            margin: 0;
+            line-height: 1.42857143;
+        }
+
+        .bootstrap .modal-body {
+            position: relative;
+            padding: 15px;
+        }
+
+        .bootstrap .modal-footer {
+            padding: 15px;
+            text-align: right;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .bootstrap .modal-footer .btn+.btn {
+            margin-left: 5px;
+            margin-bottom: 0;
+        }
+
+        .bootstrap .modal-footer .btn-group .btn+.btn {
+            margin-left: -1px;
+        }
+
+        .bootstrap .modal-footer .btn-block+.btn-block {
+            margin-left: 0;
+        }
+
+        .bootstrap .modal-scrollbar-measure {
+            position: absolute;
+            top: -9999px;
+            width: 50px;
+            height: 50px;
+            overflow: scroll;
+        }
+
+        .bootstrap .clickable {
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .bootstrap .modal-dialog {
+                width: 600px;
+                margin: 30px auto;
+            }
+
+            .bootstrap .modal-content {
+                -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            }
+
+            .bootstrap .modal-sm {
+                width: 300px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .bootstrap .modal-lg {
+                width: 900px;
+            }
+        }
+
+        .bootstrap .clearfix:before,
+        .bootstrap .clearfix:after,
+        .bootstrap .modal-footer:before,
+        .bootstrap .modal-footer:after {
+            content: " ";
+            display: table;
+        }
+
+        .bootstrap .clearfix:after,
+        .bootstrap .modal-footer:after {
+            clear: both;
+        }
+
+        .bootstrap .modal.show .modal-dialog {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        @media (min-width: 576px) .bootstrap .modal-dialog-centered {
+            min-height: calc(100% - (1.75rem * 2));
+        }
+
+        @media (min-width: 576px) .bootstrap .modal-dialog {
+            max-width: 500px;
+            margin: 1.75rem auto;
+        }
+
+        .bootstrap .modal-dialog-centered {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            min-height: calc(100% - (.5rem * 2));
+        }
+
+        .bootstrap .fade {
+            transition: opacity .15s linear;
+        }
+
+        /*! Carousel Fade Effect */
+        .carousel-fade .carousel-item {
+            opacity: 0;
+            transition: opacity ease-out .7s;
+        }
+
+        .carousel-fade .carousel-item.active,
+        .carousel-fade .carousel-item-next.carousel-item-left,
+        .carousel-fade .carousel-item-prev.carousel-item-right {
+            opacity: 1;
+        }
+
+        .carousel-fade .active.carousel-item-left,
+        .carousel-fade .active.carousel-item-right {
+            opacity: 0;
+        }
+
+        .carousel-fade .carousel-item-next,
+        .carousel-fade .carousel-item-prev,
+        .carousel-fade .carousel-item.active,
+        .carousel-fade .active.carousel-item-left,
+        .carousel-fade .active.carousel-item-prev {
+            transform: translateX(0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .why-choose-block {
+            background-color: #fff;
+            padding: 45px;
+        }
+
+        .bootstrap #carouselwhychoose .carousel-whychoose-indicators {
+            bottom: -38px !important;
+        }
+
+        .bootstrap #carouselwhychoose .carousel-item {
+            height: auto;
+        }
+
+    </style>
+
+    <div class="bootstrap">
+
+        <!-- Hero Section -->
+
+        <section id="hero-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col--xs-12 col--md-12">
+                        <p id="breadcumbs" class="breadcrumbs"><a data-track-click="on-page-interaction" data-track-id="delonghi-breadcrumbs-dream" href="https://rewards.airmiles.ca/merchandise/">Merchandise Rewards</a>&nbsp;<span>&gt;</span>&nbsp;<a data-track-click="on-page-interaction" data-track-id="delonghi-breadcrumbs-brandstore" href="https://rewards.airmiles.ca/merchandise/splash/brand-spotlight/">Brand Spotlight</a>&nbsp;<span>&gt;</span>&nbsp;<span class="active">De'Longhi</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="delonghi-logo-section" class="container text-center">
+                <div class="row desktop">
+                    <div class="col--xs-12 col--md-12">
+                        <div class="row row--xs-center">
+                            <div class="col--xs-12 col--md-2 vertical-align-auto"><a href="#whydelonghi" data-track-id="why-delonghi-button" data-track-click="on-page-interaction">WHY DE'LONGHI?</a></div>
+                            <div class="col--xs-12 col--md-2"><img src="img/delonghi-logo.png" height="88" width="200" class="delonghi-logo" alt="Delonghi Logo"></div>
+                            <div class="col--xs-12 col--md-2 vertical-align-auto"><a href="#exploreproducts" data-track-id="delonghi-explore-products-button" data-track-click="on-page-interaction">EXPLORE PRODUCTS</a></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--- Mobile Logo Links -->
+                <div class="row mobile_device_375px">
+                    <div class="col--xs-12 col--md-12">
+                        <div class="row row--xs-center">
+
+                            <div class="col--xs-12 col--md-12"><img src="img/delonghi-logo.png" height="88" width="200" class="delonghi-logo" alt="Delonghi Logo"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="col--xs-12 col--md-12 mobile-header-links">
+                        <div class="row row--xs-center">
+                            <div class="col--xs-6 col--md-6 vertical-align-auto"><a href="#whydelonghi" data-track-id="why-delonghi-button" data-track-click="on-page-interaction">WHY DE'LONGHI?</a></div>
+
+                            <div class="col--xs-6 col--md-6 vertical-align-auto"><a href="#exploreproducts" data-track-id="delonghi-explore-products-button" data-track-click="on-page-interaction">EXPLORE PRODUCTS</a></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End of Moble Logo Links -->
+                <div class="row">
+                    <div class="col--xs-12 col--md-12">
+                        <img src="img/livewell-logo.png" height="88" width="200" class="livewell-logo" alt="Live Well Logo">
+                    </div>
+                </div>
+                <a href="https://rewards.airmiles.ca/merchandise/products/delonghi-and-nespresso" data-track-id="delonghi-see-rewards-button" data-track-click="on-page-interaction"><button class="golden-btn" style="font-size: 24px; font-family: 'omnes', Arial, sans-serif; text-transform: uppercase; color: #fff;">See Rewards</button></a>
+
+                <div class="row">
+                    <div id="product-carousel" class="col--xs-12 col--md-12">
+
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+
+                                    <a href="#fullyautomaticmachine" class="d-block w-100" alt="First slide"><img src="img/expresso-product.png" alt="Expresso Product" class="img-fluid"></a>
+                                    <div class="carousel-caption d-sm-block  d-md-block">
+                                        <a href="#fullyautomaticmachine"><span>Fully Automatic Coffee Machine</span></a>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <a href="#manualpump" class="d-block w-100" alt="First slide"><img src="img/manualpump-product-1.png" alt="Expresso Product" class="img-fluid"></a>
+                                    <div class="carousel-caption d-sm-block  d-md-block">
+                                        <a href="#manualpump"><span>Manual Pump Espresso</span></a>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <a href="#kitchen" class="d-block w-100" alt="First slide"><img src="img/kitchen-product.png" alt="Expresso Product" class="img-fluid"></a>
+                                    <div class="carousel-caption d-sm-block  d-md-block">
+                                        <a href="#kitchen"><span>De'Longhi Kitchen</span></a>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <a href="#nespresso" class="d-block w-100" alt="First slide"><img src="img/nespresso-product-1.png" alt="Expresso Product" class="img-fluid"></a>
+                                    <div class="carousel-caption d-sm-block d-md-block">
+                                        <a href="#nespresso"><span>Nespresso Products</span></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- Delonghi Video -->
+        <section id="video-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+                        <a href="#" data-toggle="modal" data-target="#delonghimodal"><img src="img/delonghi-video-player.png" alt="Video Image"></a>
+
+                    </div>
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+                        <div class="col--xs-12 col--md-12">
+                            <img src="img/delonghi-product-icon.png" alt="Delonghi Product Icon">
+                        </div>
+                        <h3>De'Longhi Products</h3>
+                        <hr width="50" size="2">
+                        <p>Italy is the home of modern coffee, and home to De'Longhi. Manufacturing coffee machines at our Italian plant since 1990, coffee runs deep in our DNA. Today, our product development programs use state-of-the-art technology and innovation to design Fully Automatic Coffee Machines that consider every aspect of the perfect coffee, from aroma to texture, and flavour to temperature. So when you purchase a De'Longhi Coffee Machine, you become the coffee expert.</p>
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delonghi-and-nespresso" data-track-id="delonghi-products-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="delonghimodal" tabindex="-1" role="dialog" aria-labelledby="delonghimodal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="icon icon__close"></span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="embed-container"><iframe src="https://www.youtube.com/embed/k3CPi81BVxw" frameborder="0" allowfullscreen></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Delonghi Video Section -->
+
+        <!-- Why Choose Section -->
+        <section id="why-choose-section">
+            <a name="whydelonghi"></a>
+            <div class="container">
+                <div class="row why-choose">
+                    <div class="col--xs-12 col--md-12 text-center vertical-align-auto">
+                        <h3>Why choose a De'Longhi coffee machine?</h3>
+
+                    </div>
+                    <div class="col--xs-12 col--md-12 text-center vertical-align-auto why-choose-button">
+
+                        <div class="row">
+
+                            <div class="col--xs-6 col--md-3">
+
+                                <div class="col--xs-12 col--md-12 img-button">
+                                    <a id="barista-quality" class="button secondary url" href="#barista-quality" data-target="#carouselwhychoose" data-slide-to="0" class="active">
+                                        <img src="img/barista-quality-img.png" alt="Barista Quality Image">
+
+                                        <span>Barista-Quality</span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="col--xs-6 col--md-3">
+
+                                <div class="col--xs-12 col--md-12 img-button">
+                                    <a id="machine-range" class="button secondary url" href="#machine-range" data-target="#carouselwhychoose" data-slide-to="1">
+                                        <img src="img/machine-range-img.png" alt="Machine Range Image">
+
+                                        <span>Machine Range</span></a>
+
+                                </div>
+                            </div>
+                            <div class="col--xs-6 col--md-3">
+                                <div class="col--xs-12 col--md-12 img-button">
+
+                                    <a id="italian-heritage" class="button secondary url" href="#italian-heritage" data-target="#carouselwhychoose" data-slide-to="2">
+                                        <img src="img/italian-heritage-img.png" alt="Italian Heritage Image">
+
+                                        <span>Italian Heritage</span></a>
+
+                                </div>
+                            </div>
+                            <div class="col--xs-6 col--md-3">
+                                <div class="col--xs-12 col--md-12 img-button">
+
+                                    <a id="innovation" class="button secondary url" href="#innovation" data-target="#carouselwhychoose" data-slide-to="3">
+                                        <img src="img/innovation-img.png" alt="Innovation Image">
+
+                                        <span>Innovation</span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col--xs-12 col--md-12 text-center vertical-align-auto why-choose-box">
+
+                        <div class="row">
+
+                            <div id="product-carousel" class="col--xs-12 col--md-12">
+
+                                <div id="carouselwhychoose" class="carousel slide carousel-fade" data-ride="carousel">
+                                    <ol class="carousel-indicators carousel-whychoose-indicators">
+                                        <li data-target="#carouselwhychoose" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselwhychoose" data-slide-to="1"></li>
+                                        <li data-target="#carouselwhychoose" data-slide-to="2"></li>
+                                        <li data-target="#carouselwhychoose" data-slide-to="3"></li>
+                                    </ol>
+
+                                    <div class="carousel-inner">
+
+                                        <div class="carousel-item">
+
+                                            <div class="row why-choose-block">
+
+                                                <div class="col--xs-5 col--md-5 desktop">
+                                                    <img src="img/barista-quality-cat-img.jpg" alt="Carousel Main Image">
+                                                </div>
+                                                <div class="col--xs-12 col--md-6 text-center  vertical-align-auto">
+                                                    <div class="col--xs-12 col--md-12">
+                                                        <img src="img/barista-quality-icon.png" alt="Barista Quality Icon">
+                                                    </div>
+                                                    <h3>Barista-Quality</h3>
+                                                    <hr width="50" size="2">
+                                                    <p>Extract a creamy, dense and aromatic coffee consistently every time with an even grind, right dose, precise tamping and optimal infusion of pressure and temperature.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+
+                                            <div class="row why-choose-block">
+                                                <div class="col--xs-5 col--md-5 desktop">
+                                                    <img src="img/barista-quality-cat-img.jpg" alt="Carousel Main Image">
+                                                </div>
+                                                <div class="col--xs-12 col--md-6 text-center  vertical-align-auto">
+                                                    <div class="col--xs-12 col--md-12">
+                                                        <img src="img/barista-quality-icon.png" alt="Barista Quality Icon">
+                                                    </div>
+                                                    <h3>Machine Range</h3>
+                                                    <hr width="50" size="2">
+                                                    <p>No two coffee lovers are alike. Whichever coffee lover you are, De'Longhi's comprehensive range of machines provides the best coffee experience – from start to sip.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+
+                                            <div class="row why-choose-block">
+
+                                                <div class="col--xs-5 col--md-5 desktop">
+                                                    <img src="img/barista-quality-cat-img.jpg" alt="Carousel Main Image">
+                                                </div>
+                                                <div class="col--xs-12 col--md-6 text-center  vertical-align-auto">
+                                                    <div class="col--xs-12 col--md-12">
+                                                        <img src="img/barista-quality-icon.png" alt="Barista Quality Icon">
+                                                    </div>
+                                                    <h3>Italian Heritage</h3>
+                                                    <hr width="50" size="2">
+                                                    <p>Our machines are made by coffee lovers, for coffee lovers. De'Longhi are producers of the highest quality machines that continue to create the best tasting coffee year after year.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item active">
+
+                                            <div class="row why-choose-block">
+                                                <div class="col--xs-5 col--md-5 desktop">
+                                                    <img src="img/barista-quality-cat-img.jpg" alt="Carousel Main Image">
+                                                </div>
+                                                <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+                                                    <div class="col--xs-12 col--md-12">
+                                                        <img src="img/barista-quality-icon.png" alt="Barista Quality Icon">
+                                                    </div>
+                                                    <h3>Innovation</h3>
+                                                    <hr width="50" size="2">
+                                                    <p>Our passion for great coffee inspires our commitment to innovation. Our machines are designed and engineered to make great coffee experiences easy for all.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Why Choose Section -->
+
+        <!-- Fully Automatic Machine Section -->
+        <section id="fully-auto-machine-section">
+            <a name="fullyautomaticmachine"></a><a name="exploreproducts"></a>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+                        <div class="box-panel">
+                            <div class="col--xs-12 col--md-12">
+                                <img src="img/full-automatic-icon.png" alt="Full Automatic Icon">
+                            </div>
+                            <h3>Fully Automatic Coffee Machine</h3>
+                            <hr width="50" size="2">
+
+                            <div class="row">
+                                <div class="col--md-4 text-center vertical-align-auto">
+                                    <img src="img/delonghi-world-leader-banner.jpg" alt="nespresso world leader">
+                                </div>
+
+                                <div class="col--xs-12 col--md-8 text-center vertical-align-auto">
+                                    <p>Choose De'Longhi for a fully customized espresso experience in the comfort of your own home. Stylish and elegant, a De'Longhi espresso and cappuccino machine will memorize your ideal beverage, from the strength of your espresso right down to the size of your drink. Just program in your preferences and let your De'Longhi do the rest. </p>
+                                </div>
+                            </div>
+                            <a href="https://rewards.airmiles.ca/merchandise/products/fully-automatic-coffee-machines" data-track-id="fully-automatic-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+                        </div>
+                    </div>
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Fully Automatic Machine Section -->
+
+        <!-- Manually Pump Expresso Section -->
+        <section id="manually-pump-expresso-section">
+            <a name="manualpump"></a>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+
+
+                    </div>
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+                        <div class="box-panel">
+                            <div class="col--xs-12 col--md-12">
+                                <img src="img/manual-pump-icon.png" alt="Manual Pump Icon">
+                            </div>
+                            <h3>Manual Pump Espresso</h3>
+                            <hr width="50" size="2">
+                            <p>now you can make authentic espressos, lattes and cappuccinos with
+                                15 bar pressure to suit your taste, in the comfort of your kitchen. Whatever your preference - single or double espresso, cappuccino or latte - the pump espresso machine brews authentic barista-quality beverages just like you enjoy at your favourite coffeehouse.</p>
+                            <a href="https://rewards.airmiles.ca/merchandise/products/manual-pump-espresso" data-track-id="manual-pump-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Manually Pump Expresso Section -->
+
+        <!-- Delonghi Kitchen Section -->
+        <section id="delonghi-kitchen-section">
+            <a name="kitchen"></a>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+                        <div class="box-panel">
+                            <div class="col--xs-12 col--md-12">
+                                <img src="img/delonghi-kitchen-icon.png" alt="Kitchen Icon">
+                            </div>
+                            <h3>De'Longhi Kitchen</h3>
+                            <hr width="50" size="2">
+
+                            <p>How do great cooks bring their best to the table? They select the finest, freshest ingredients and they rely on appliances that help make the cooking process quicker and easier. Introducing the Livenza Collection of beautifully engineered countertop appliances from De'Longhi. Transforming great ingredients into exceptional food. </p>
+                            <a href="https://rewards.airmiles.ca/merchandise/products/delonghi-kitchen" data-track-id="delonghi-kitchen-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+                        </div>
+                    </div>
+                    <div class="col--xs-12 col--md-6 text-center vertical-align-auto">
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Delonghi Kitchen Section -->
+
+        <!-- Nepresso Product Section -->
+        <section id="nepresso-product-section" class="desktop">
+            <a name="nespresso"></a>
+            <div class="container">
+                <div class="row align-display-flex">
+
+                    <div class="col--xs-4 col--md-4 text-center align-flex-bottom">
+
+                        <img src="img/nepresso-vertuo-product.png" alt="nespresso vertuo">
+                    </div>
+                    <div class="col--xs-4 col--md-4 text-center align-flex-top">
+                        <img src="img/nerpresso-logo.png" alt="Nepresso Logo">
+                        <a href="https://rewards.airmiles.ca/merchandise/products/unique-coffee-experiences" data-track-id="nespresso-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+                    </div>
+                    <div class="col--xs-4 col--md-4 text-center align-flex-bottom">
+                        <img src="img/nepresso-original-product.png" alt="Nepresso Original Product">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Nepresso Product Section -->
+
+        <!-- Mobile Nepresso Product Section -->
+        <section id="nepresso-product-section" class="mobile_device_375px">
+            <a name="nespresso"></a>
+            <div class="container">
+                <div class="row align-display-flex">
+                    <div class="col--xs-12 col--md-12 text-center align-flex-top">
+                        <img src="img/nerpresso-logo.png" alt="Nepresso Logo" class="nespresso-mobile-logo">
+                        <a href="https://rewards.airmiles.ca/merchandise/products/unique-coffee-experiences" data-track-id="nespresso-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;margin-bottom:25px;">Shop now</button></a>
+                    </div>
+                </div>
+                <div class="row align-display-flex">
+
+                    <div class="col--xs-6 col--md-6 text-center align-flex-bottom">
+
+                        <img src="img/nepresso-vertuo-product.png" alt="nespresso vertuo">
+                    </div>
+
+                    <div class="col--xs-6 col--md-6 text-center align-flex-bottom">
+                        <img src="img/nepresso-original-product.png" alt="Nepresso Original Product">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Nepresso Product Section -->
+
+        <!-- Nepresso Recycle Bag Section -->
+        <section id="nepresso-recycle-bag-section" class="desktop">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-12 text-center vertical-align-auto nepresso-recycle-title">
+                        <img src="img/nepresso-recycle-title.png" alt="Nepresso Recycle Title">
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-7 text-center vertical-align-auto recyclebags">
+
+                        <img src="img/nepresso-recycle-bags.png" alt="Recycle Bags Image">
+                    </div>
+                    <div class="col--xs-12 col--md-5 text-center vertical-align-auto">
+                        <img src="img/nepresso-recycle-copy.png" alt="nespresso recycle">
+                        <a href="https://www.nespresso.com/ca/en/services-recycling" data-track-id="delonghi-more-info-button" data-track-click="on-page-interaction" target="_blank"><img src="img/more-info-btn.png" alt="More Info Button"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Nepresso Recycle Section -->
+
+        <!-- Mobile Nepresso Recycle Bag Section -->
+        <section id="nepresso-recycle-bag-section" class="mobile_device_375px">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-12 text-center vertical-align-auto nepresso-recycle-title">
+                        <img src="img/nepresso-recycle-title-mobile.png" alt="Nepresso Recycle Title">
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-7 text-center vertical-align-auto recyclebags">
+
+                        <img src="img/nepresso-recycle-bags.png" alt="Recycle Bags Image">
+                    </div>
+                    <div class="col--xs-12 col--md-5 text-center vertical-align-auto">
+                        <img src="img/nepresso-recycle-copy.png">
+                        <a href="https://www.nespresso.com/ca/en/services-recycling" data-track-id="delonghi-more-info-button" data-track-click="on-page-interaction" target="_blank"><img src="img/more-info-btn.png" alt="More Info Button"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Nepresso Recycle Section -->
+
+        <!-- How to order Section -->
+        <section id="nepresso-how-to-order-section" class="desktop">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-5 text-center vertical-align-auto">
+                        <div class="row">
+                            <div class="col--xs-12 col--md-12 text-center vertical-align-auto howtoorder-icons">
+                                <img src="img/howtoorder-title.png" alt="how to order">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/by-internet" data-track-id="delonghi-online-howtoorder-button" data-track-click="on-page-interaction" target="_blank"><img src="img/online-icon.png" alt="Online"></a>
+                            </div>
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/on-mobile-app" data-track-id="delonghi-onmobile-button" data-track-click="on-page-interaction" target="_blank"><img src="img/onmobile-icon.png" alt="On Mobile Application"></a>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/by-phone" data-track-id="delonghi-byphone-button" data-track-click="on-page-interaction" target="_blank"><img src="img/byphone-icon.png" alt="By Phone"></a>
+                            </div>
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/in-boutique" data-track-id="delonghi-inboutique-button" data-track-click="on-page-interaction" target="_blank"><img src="img/inboutique-icon.png" alt="In Boutique"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col--xs-12 col--md-7 text-center vertical-align-auto">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of How to order Section -->
+
+        <!-- Mobile How to order Section -->
+        <section id="nepresso-how-to-order-section-mobile" class="mobile_device_375px">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col--xs-12 col--md-5 text-center vertical-align-auto">
+                        <div class="row">
+                            <div class="col--xs-12 col--md-12 text-center vertical-align-auto howtoorder-icons">
+                                <img src="img/howtoorder-title.png" alt="how to order">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/by-internet" data-track-id="delonghi-online-howtoorder-button" data-track-click="on-page-interaction" target="_blank"><img src="img/online-icon.png" alt="Online"></a>
+                            </div>
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/on-mobile-app" data-track-id="delonghi-onmobile-button" data-track-click="on-page-interaction" target="_blank"><img src="img/onmobile-icon.png" alt="On Mobile Application"></a>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/by-phone" data-track-id="delonghi-byphone-button" data-track-click="on-page-interaction" target="_blank"><img src="img/byphone-icon.png" alt="By Phone"></a>
+                            </div>
+                            <div class="col--xs-6 col--md-6 text-center vertical-align-auto howtoorder-icons">
+                                <a href="https://www.nespresso.com/ca/en/services#!/order/in-boutique" data-track-id="delonghi-inboutique-button" data-track-click="on-page-interaction" target="_blank"><img src="img/inboutique-icon.png" alt="In Boutique"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col--xs-12 col--md-7 text-center vertical-align-auto">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile How to order Section -->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
